@@ -1,5 +1,5 @@
 //
-//  GroupActionViewController.swift
+//  GroupIdentificationViewController.swift
 //  Arcuisine
 //
 //  Created by Student on 1/31/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GroupActionViewController: UIViewController {
+class GroupIdentificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,17 +21,24 @@ class GroupActionViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func DoSomething(sender: AnyObject) {
+    @IBOutlet weak var displayLabel: UILabel!
+    @IBOutlet weak var IDField: UITextField!
+    @IBAction func joinPressed(sender: AnyObject) {
+        // This should A) send cur group clear
+        // B join the new group if matched
+        // C Move on to the next page... Query the data too?
         
+        // A
         
+        // B
+        let groupID = self.IDField.text ?? ""
         
+        print("Group: \(groupID), User: \(UID)")
+        
+        // if error, display error on displayLabel
+        // C
     }
 
-    @IBAction func makeGroupPressed(sender: AnyObject) {
-    }
-    
-    @IBAction func joinGroupPressed(sender: AnyObject) {
-    }
     /*
     // MARK: - Navigation
 
