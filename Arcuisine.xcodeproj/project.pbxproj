@@ -15,6 +15,8 @@
 		3F147BFA1C5E5432008EE89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F147BF81C5E5432008EE89A /* LaunchScreen.storyboard */; };
 		3F147C051C5E5432008EE89A /* ArcuisineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147C041C5E5432008EE89A /* ArcuisineTests.swift */; };
 		3F147C101C5E5432008EE89A /* ArcuisineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147C0F1C5E5432008EE89A /* ArcuisineUITests.swift */; };
+		3F147C1F1C5E5DDF008EE89A /* logo27C.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F147C1E1C5E5DDF008EE89A /* logo27C.png */; };
+		3F147C211C5E5E05008EE89A /* logo27Csmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F147C201C5E5E05008EE89A /* logo27Csmall.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		3F147C0B1C5E5432008EE89A /* ArcuisineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArcuisineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F147C0F1C5E5432008EE89A /* ArcuisineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcuisineUITests.swift; sourceTree = "<group>"; };
 		3F147C111C5E5432008EE89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F147C1E1C5E5DDF008EE89A /* logo27C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo27C.png; sourceTree = "<group>"; };
+		3F147C201C5E5E05008EE89A /* logo27Csmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo27Csmall.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,7 @@
 		3F147BE11C5E5432008EE89A = {
 			isa = PBXGroup;
 			children = (
+				3F147C1D1C5E5DAE008EE89A /* Assets */,
 				3F147BEC1C5E5432008EE89A /* Arcuisine */,
 				3F147C031C5E5432008EE89A /* ArcuisineTests */,
 				3F147C0E1C5E5432008EE89A /* ArcuisineUITests */,
@@ -126,6 +131,15 @@
 				3F147C111C5E5432008EE89A /* Info.plist */,
 			);
 			path = ArcuisineUITests;
+			sourceTree = "<group>";
+		};
+		3F147C1D1C5E5DAE008EE89A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3F147C1E1C5E5DDF008EE89A /* logo27C.png */,
+				3F147C201C5E5E05008EE89A /* logo27Csmall.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +249,8 @@
 				3F147BFA1C5E5432008EE89A /* LaunchScreen.storyboard in Resources */,
 				3F147BF71C5E5432008EE89A /* Assets.xcassets in Resources */,
 				3F147BF51C5E5432008EE89A /* Main.storyboard in Resources */,
+				3F147C1F1C5E5DDF008EE89A /* logo27C.png in Resources */,
+				3F147C211C5E5E05008EE89A /* logo27Csmall.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
