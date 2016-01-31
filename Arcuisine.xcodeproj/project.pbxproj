@@ -17,6 +17,7 @@
 		3F147C101C5E5432008EE89A /* ArcuisineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147C0F1C5E5432008EE89A /* ArcuisineUITests.swift */; };
 		3F147C1F1C5E5DDF008EE89A /* logo27C.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F147C1E1C5E5DDF008EE89A /* logo27C.png */; };
 		3F147C211C5E5E05008EE89A /* logo27Csmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F147C201C5E5E05008EE89A /* logo27Csmall.png */; };
+		3F147D181C5E8404008EE89A /* GroupActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D171C5E8404008EE89A /* GroupActionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3F147C111C5E5432008EE89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F147C1E1C5E5DDF008EE89A /* logo27C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo27C.png; sourceTree = "<group>"; };
 		3F147C201C5E5E05008EE89A /* logo27Csmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo27Csmall.png; sourceTree = "<group>"; };
+		3F147D171C5E8404008EE89A /* GroupActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupActionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		3F147BE11C5E5432008EE89A = {
 			isa = PBXGroup;
 			children = (
+				3F147D171C5E8404008EE89A /* GroupActionViewController.swift */,
 				3F147C1D1C5E5DAE008EE89A /* Assets */,
 				3F147BEC1C5E5432008EE89A /* Arcuisine */,
 				3F147C031C5E5432008EE89A /* ArcuisineTests */,
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F147D181C5E8404008EE89A /* GroupActionViewController.swift in Sources */,
 				3F147BF21C5E5432008EE89A /* SecondViewController.swift in Sources */,
 				3F147BEE1C5E5432008EE89A /* AppDelegate.swift in Sources */,
 				3F147BF01C5E5432008EE89A /* FirstViewController.swift in Sources */,
