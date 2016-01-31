@@ -18,9 +18,7 @@
 		3F147C1F1C5E5DDF008EE89A /* logo27C.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F147C1E1C5E5DDF008EE89A /* logo27C.png */; };
 		3F147C211C5E5E05008EE89A /* logo27Csmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F147C201C5E5E05008EE89A /* logo27Csmall.png */; };
 		3F147D181C5E8404008EE89A /* GroupActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D171C5E8404008EE89A /* GroupActionViewController.swift */; };
-		3F147D1B1C5E91FA008EE89A /* JKBCrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D191C5E91FA008EE89A /* JKBCrypt.swift */; };
-		3F147D1C1C5E91FA008EE89A /* JKBCryptRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D1A1C5E91FA008EE89A /* JKBCryptRandom.swift */; };
-		3F147D1E1C5E9207008EE89A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3F147D1D1C5E9207008EE89A /* LICENSE */; };
+		3F147D261C5E9901008EE89A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D251C5E9901008EE89A /* LoginViewController.swift */; };
 		613C3C7AA4161CBADA4965CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5A5BD46D1203A62D1B4E44 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,9 +58,7 @@
 		3F147C1E1C5E5DDF008EE89A /* logo27C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo27C.png; sourceTree = "<group>"; };
 		3F147C201C5E5E05008EE89A /* logo27Csmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo27Csmall.png; sourceTree = "<group>"; };
 		3F147D171C5E8404008EE89A /* GroupActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupActionViewController.swift; sourceTree = "<group>"; };
-		3F147D191C5E91FA008EE89A /* JKBCrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBCrypt.swift; sourceTree = "<group>"; };
-		3F147D1A1C5E91FA008EE89A /* JKBCryptRandom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JKBCryptRandom.swift; sourceTree = "<group>"; };
-		3F147D1D1C5E9207008EE89A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3F147D251C5E9901008EE89A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		918CE8E4A1778150CF17DC0F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DF5A5BD46D1203A62D1B4E44 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -97,9 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				3F147D171C5E8404008EE89A /* GroupActionViewController.swift */,
-				3F147D191C5E91FA008EE89A /* JKBCrypt.swift */,
-				3F147D1D1C5E9207008EE89A /* LICENSE */,
-				3F147D1A1C5E91FA008EE89A /* JKBCryptRandom.swift */,
 				3F147C1D1C5E5DAE008EE89A /* Assets */,
 				3F147BEC1C5E5432008EE89A /* Arcuisine */,
 				3F147C031C5E5432008EE89A /* ArcuisineTests */,
@@ -127,6 +120,7 @@
 				3F147BEF1C5E5432008EE89A /* FirstViewController.swift */,
 				3F147BF11C5E5432008EE89A /* SecondViewController.swift */,
 				3F147BF31C5E5432008EE89A /* Main.storyboard */,
+				3F147D251C5E9901008EE89A /* LoginViewController.swift */,
 				3F147BF61C5E5432008EE89A /* Assets.xcassets */,
 				3F147BF81C5E5432008EE89A /* LaunchScreen.storyboard */,
 				3F147BFB1C5E5432008EE89A /* Info.plist */,
@@ -249,6 +243,7 @@
 				TargetAttributes = {
 					3F147BE91C5E5432008EE89A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = C9Y47JDJP5;
 					};
 					3F147BFF1C5E5432008EE89A = {
 						CreatedOnToolsVersion = 7.2;
@@ -285,7 +280,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F147D1E1C5E9207008EE89A /* LICENSE in Resources */,
 				3F147BFA1C5E5432008EE89A /* LaunchScreen.storyboard in Resources */,
 				3F147BF71C5E5432008EE89A /* Assets.xcassets in Resources */,
 				3F147BF51C5E5432008EE89A /* Main.storyboard in Resources */,
@@ -365,9 +359,8 @@
 			files = (
 				3F147D181C5E8404008EE89A /* GroupActionViewController.swift in Sources */,
 				3F147BF21C5E5432008EE89A /* SecondViewController.swift in Sources */,
-				3F147D1B1C5E91FA008EE89A /* JKBCrypt.swift in Sources */,
-				3F147D1C1C5E91FA008EE89A /* JKBCryptRandom.swift in Sources */,
 				3F147BEE1C5E5432008EE89A /* AppDelegate.swift in Sources */,
+				3F147D261C5E9901008EE89A /* LoginViewController.swift in Sources */,
 				3F147BF01C5E5432008EE89A /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,10 +504,13 @@
 			baseConfigurationReference = 332A5F4D3856C9C0EF7D81A1 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Arcuisine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MikeAndRyan.Arcuisine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -523,10 +519,13 @@
 			baseConfigurationReference = 918CE8E4A1778150CF17DC0F /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Arcuisine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MikeAndRyan.Arcuisine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
