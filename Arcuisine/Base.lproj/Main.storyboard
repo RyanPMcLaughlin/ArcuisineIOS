@@ -22,13 +22,13 @@
                                 <rect key="frame" x="109" y="313" width="158" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
                                 <rect key="frame" x="91" y="363" width="195" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -73,7 +73,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please enter the Group ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlO-6l-dmj">
                                 <rect key="frame" x="88" y="28" width="199" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -87,42 +87,20 @@
                     <connections>
                         <outlet property="IDField" destination="zdT-St-RsA" id="C8S-r0-III"/>
                         <outlet property="displayLabel" destination="GlO-6l-dmj" id="4xC-wK-9zT"/>
+                        <segue destination="K33-cq-47G" kind="show" identifier="IDToUsersSegue" id="Kfc-Dv-q7R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDp-Uz-yyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288.5" y="1193.5"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Group Members-->
         <scene sceneID="3Ue-h3-KP6">
             <objects>
+                <tableViewController title="Group Members" id="K33-cq-47G" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UnF-Ta-JL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="K33-cq-47G" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="dWH-FZ-TpR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Doc-kK-EGJ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Doc-kK-EGJ" id="rq9-3y-wcL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="K33-cq-47G" id="9PE-zJ-hsc"/>
-                            <outlet property="delegate" destination="K33-cq-47G" id="2nI-Rc-fL1"/>
-                        </connections>
-                    </tableView>
-                    <connections>
-                        <segue destination="tIH-wc-iWa" kind="show" identifier="JoinValidGroupSegue" id="X0Q-wG-rAf"/>
-                    </connections>
-                </tableViewController>
             </objects>
-            <point key="canvasLocation" x="1390" y="-149"/>
+            <point key="canvasLocation" x="1259.5" y="410.5"/>
         </scene>
         <!--Group Action-->
         <scene sceneID="FBp-tl-mW4">
@@ -140,7 +118,6 @@
                                 <rect key="frame" x="150" y="355" width="75" height="30"/>
                                 <state key="normal" title="Join Group"/>
                                 <connections>
-                                    <action selector="joinGroupPressed:" destination="JE8-KH-xlf" eventType="touchUpInside" id="O4W-W1-nqR"/>
                                     <segue destination="v6v-Gy-1oP" kind="show" id="Jjo-d5-J8V"/>
                                 </connections>
                             </button>
@@ -148,40 +125,27 @@
                                 <rect key="frame" x="138" y="401" width="99" height="30"/>
                                 <state key="normal" title="Make Group"/>
                                 <connections>
-                                    <action selector="DoSomething:" destination="JE8-KH-xlf" eventType="touchUpInside" id="WwM-hw-2Il"/>
                                     <action selector="makeGroupPressed:" destination="JE8-KH-xlf" eventType="touchUpInside" id="p1S-lu-SYb"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sorry, try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-be-x2f">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="899-PQ-tFm"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="second" id="899-PQ-tFm"/>
                     <connections>
-                        <segue destination="K33-cq-47G" kind="show" identifier="JoinGroupSegue" id="MnJ-vb-qPr"/>
-                        <segue destination="tIH-wc-iWa" kind="show" identifier="MakeGroupSegue" id="nYE-AX-5Qz"/>
+                        <outlet property="displayLabel" destination="BxB-be-x2f" id="YmW-Cy-x37"/>
+                        <segue destination="K33-cq-47G" kind="show" identifier="makeGroupSegue" id="MnJ-vb-qPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xr6-GH-MYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288.5" y="368.5"/>
-        </scene>
-        <!--View Group-->
-        <scene sceneID="QVb-3d-nPP">
-            <objects>
-                <viewController title="View Group" id="tIH-wc-iWa" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="LAx-E4-88N"/>
-                        <viewControllerLayoutGuide type="bottom" id="5KE-n0-uwG"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3Nr-Mn-jjG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Unc-rY-PfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1543.5" y="697.5"/>
         </scene>
         <!--Login-->
         <scene sceneID="X2n-lt-Nw0">
@@ -219,13 +183,13 @@
                                     <constraint firstAttribute="height" constant="34" id="PIJ-vq-KW0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="I'm Hidden" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEP-hc-s8t">
                                 <rect key="frame" x="124" y="290" width="152" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXw-LD-jZN">
@@ -307,8 +271,9 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="logo27C.png" width="683" height="683"/>
+        <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X0Q-wG-rAf"/>
+        <segue reference="Kfc-Dv-q7R"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
+var GID:String = ""
 
 class GroupIdentificationViewController: UIViewController {
 
@@ -28,15 +32,28 @@ class GroupIdentificationViewController: UIViewController {
         // B join the new group if matched
         // C Move on to the next page... Query the data too?
         
-        // A
-        
-        // B
         let groupID = self.IDField.text ?? ""
         
-        print("Group: \(groupID), User: \(UID)")
-        
-        // if error, display error on displayLabel
-        // C
+        // A
+        Alamofire.request(.POST, "http://ailab.oborot.org:3049/group", parameters: ["action":"join", "email":"\(UID)", "gid":"\(groupID)"])
+            .responseJSON { response in
+                
+                if let dataFromString = response.data{
+                    let json = JSON(data: dataFromString)
+                    // If response is positive
+                        // Store all of the user data also returned
+                        // Call the group user list scene
+                    // Else, print an error for no group
+                    if (json["users"] != nil){
+                        GID = groupID
+                        // Store the other fields in a list accessible by other scenes
+                        self.performSegueWithIdentifier("IDToUsersSegue", sender:nil)
+                    }else{
+                        self.displayLabel.text="Invalid Group"
+                        self.IDField.text=""
+                    }
+                }
+        }
     }
 
     /*

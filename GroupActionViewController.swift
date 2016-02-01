@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class GroupActionViewController: UIViewController {
 
@@ -20,18 +22,27 @@ class GroupActionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    @IBAction func DoSomething(sender: AnyObject) {
-        
-        
-        
-    }
 
+    @IBOutlet weak var displayLabel: UILabel!
     @IBAction func makeGroupPressed(sender: AnyObject) {
-    }
+        Alamofire.request(.POST, "http://ailab.oborot.org:3049/group", parameters: ["action":"make", "email":"\(UID)"])
+            .responseJSON { response in
+                
+                if let dataFromString = response.data{
+                    let json = JSON(data: dataFromString)
+                    // If response is positive
+
+                    if (json["gid"] != nil){
+                        GID = json["success"].string ?? ""
+                        // Store the other fields in a list accessible by other scenes
+                        self.performSegueWithIdentifier("makeGroupSegue", sender:nil)
+                    }else{
+                        self.displayLabel.hidden=false
+                    }
+                    print(json)
+                }
+        }    }
     
-    @IBAction func joinGroupPressed(sender: AnyObject) {
-    }
     /*
     // MARK: - Navigation
 
