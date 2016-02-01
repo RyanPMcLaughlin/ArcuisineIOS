@@ -11,6 +11,7 @@ import Alamofire
 import SwiftyJSON
 
 var GID:String = ""
+var users:[String]?
 
 class GroupIdentificationViewController: UIViewController {
 
@@ -46,6 +47,8 @@ class GroupIdentificationViewController: UIViewController {
                     // Else, print an error for no group
                     if (json["users"] != nil){
                         GID = groupID
+                        let usersTemp:[JSON] = json["users"].arrayValue
+                        users = usersTemp.map{$0.string!}
                         // Store the other fields in a list accessible by other scenes
                         self.performSegueWithIdentifier("IDToUsersSegue", sender:nil)
                     }else{

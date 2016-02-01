@@ -20,6 +20,7 @@
 		3F147D181C5E8404008EE89A /* GroupActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D171C5E8404008EE89A /* GroupActionViewController.swift */; };
 		3F147D261C5E9901008EE89A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D251C5E9901008EE89A /* LoginViewController.swift */; };
 		3F147D281C5EC139008EE89A /* GroupIdentificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F147D271C5EC139008EE89A /* GroupIdentificationViewController.swift */; };
+		3F83A2E41C5EEC7B00FCCF2E /* SimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F83A2E31C5EEC7B00FCCF2E /* SimpleTableViewController.swift */; };
 		613C3C7AA4161CBADA4965CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF5A5BD46D1203A62D1B4E44 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		3F147D171C5E8404008EE89A /* GroupActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupActionViewController.swift; sourceTree = "<group>"; };
 		3F147D251C5E9901008EE89A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F147D271C5EC139008EE89A /* GroupIdentificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupIdentificationViewController.swift; sourceTree = "<group>"; };
+		3F83A2E31C5EEC7B00FCCF2E /* SimpleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableViewController.swift; sourceTree = "<group>"; };
 		918CE8E4A1778150CF17DC0F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DF5A5BD46D1203A62D1B4E44 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -122,6 +124,7 @@
 				3F147BEF1C5E5432008EE89A /* FirstViewController.swift */,
 				3F147BF11C5E5432008EE89A /* SecondViewController.swift */,
 				3F147BF31C5E5432008EE89A /* Main.storyboard */,
+				3F83A2E31C5EEC7B00FCCF2E /* SimpleTableViewController.swift */,
 				3F147D271C5EC139008EE89A /* GroupIdentificationViewController.swift */,
 				3F147D251C5E9901008EE89A /* LoginViewController.swift */,
 				3F147BF61C5E5432008EE89A /* Assets.xcassets */,
@@ -364,6 +367,7 @@
 				3F147BF21C5E5432008EE89A /* SecondViewController.swift in Sources */,
 				3F147BEE1C5E5432008EE89A /* AppDelegate.swift in Sources */,
 				3F147D261C5E9901008EE89A /* LoginViewController.swift in Sources */,
+				3F83A2E41C5EEC7B00FCCF2E /* SimpleTableViewController.swift in Sources */,
 				3F147D281C5EC139008EE89A /* GroupIdentificationViewController.swift in Sources */,
 				3F147BF01C5E5432008EE89A /* FirstViewController.swift in Sources */,
 			);
