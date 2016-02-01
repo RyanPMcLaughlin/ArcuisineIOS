@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
+
+var PLACES:[JSON]=[]
 
 class SimpleTableViewController: UITableViewController {
     
@@ -28,6 +32,26 @@ class SimpleTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func doAThing(sender: AnyObject) {
+        Alamofire.request(.POST, "http://ailab.oborot.org:3049/optim", parameters: ["action":"make", "gid":"\(GID)"])
+            .responseJSON { response in
+                
+                if let dataFromString = response.data{
+                    let json = JSON(data: dataFromString)
+                    // If response is positive
+                    print(json)
+                    if (json["gid"] != nil){
+                        PLACES = json.array!
+                        self.performSegueWithIdentifier("optimizePressSegue", sender:nil)
+                    }else{
+                        self.displayLabel.hidden=false
+                    }
+                    print(json)
+                }
+        }
+        
+        "optimizePressSegue"
+    }
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
