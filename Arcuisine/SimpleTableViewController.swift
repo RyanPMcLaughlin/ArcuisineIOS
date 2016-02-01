@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 
-var PLACES:[JSON]=[]
+var PLACES:[String]?
 
 class SimpleTableViewController: UITableViewController {
     
@@ -40,8 +40,9 @@ class SimpleTableViewController: UITableViewController {
                     let json = JSON(data: dataFromString)
                     // If response is positive
                     print(json)
-                    if (json["gid"] != nil){
-                        PLACES = json.array!
+                    if (json["data"] != nil){
+                        let posTemp:[JSON] = json["data"].arrayValue
+                        PLACES = posTemp.map{$0.string!}
                         self.performSegueWithIdentifier("optimizePressSegue", sender:nil)
                     }else{
                         self.displayLabel.hidden=false
@@ -49,8 +50,6 @@ class SimpleTableViewController: UITableViewController {
                     print(json)
                 }
         }
-        
-        "optimizePressSegue"
     }
     // MARK: - Table view data source
 
