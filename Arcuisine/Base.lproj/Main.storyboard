@@ -87,20 +87,12 @@
                     <connections>
                         <outlet property="IDField" destination="zdT-St-RsA" id="C8S-r0-III"/>
                         <outlet property="displayLabel" destination="GlO-6l-dmj" id="4xC-wK-9zT"/>
-                        <segue destination="K33-cq-47G" kind="show" identifier="IDToUsersSegue" id="Kfc-Dv-q7R"/>
+                        <segue destination="mkA-Qp-Pxc" kind="show" identifier="IDToUsersSegue" id="MTq-aV-beb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDp-Uz-yyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288.5" y="1193.5"/>
-        </scene>
-        <!--Group Members-->
-        <scene sceneID="3Ue-h3-KP6">
-            <objects>
-                <tableViewController title="Group Members" id="K33-cq-47G" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UnF-Ta-JL8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1259.5" y="410.5"/>
         </scene>
         <!--Group Action-->
         <scene sceneID="FBp-tl-mW4">
@@ -129,7 +121,7 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sorry, try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxB-be-x2f">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <rect key="frame" x="128" y="323" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -140,12 +132,66 @@
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="second" id="899-PQ-tFm"/>
                     <connections>
                         <outlet property="displayLabel" destination="BxB-be-x2f" id="YmW-Cy-x37"/>
-                        <segue destination="K33-cq-47G" kind="show" identifier="makeGroupSegue" id="MnJ-vb-qPr"/>
+                        <segue destination="mkA-Qp-Pxc" kind="show" identifier="makeGroupSegue" id="KqQ-6D-mb0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xr6-GH-MYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="288.5" y="368.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9ds-Ni-z6b">
+            <objects>
+                <viewController id="mkA-Qp-Pxc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Sx-or-0Ek"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vkh-LP-BIS"/>
+                    </layoutGuides>
+                    <stackView key="view" opaque="NO" contentMode="scaleToFill" axis="vertical" id="0bS-Hc-SNn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HnR-6n-znu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6F-Yg-qF0">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0hf-lo-H5W"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgC-3Q-KTH">
+                                <rect key="frame" x="0.0" y="50" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="3Me-gA-TDN"/>
+                                </constraints>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CX-Yr-Gns">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4T-E5-eaM">
+                                        <rect key="frame" x="0.0" y="-617" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Rlq-qK-ZU4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HUP-xy-phc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="871.5" y="368.5"/>
         </scene>
         <!--Login-->
         <scene sceneID="X2n-lt-Nw0">
@@ -274,6 +320,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Kfc-Dv-q7R"/>
+        <segue reference="MTq-aV-beb"/>
     </inferredMetricsTieBreakers>
 </document>

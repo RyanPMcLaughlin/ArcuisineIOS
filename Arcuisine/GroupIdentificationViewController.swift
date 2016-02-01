@@ -52,6 +52,7 @@ class GroupIdentificationViewController: UIViewController {
                         self.displayLabel.text="Invalid Group"
                         self.IDField.text=""
                     }
+                    print(json)
                 }
         }
     }
