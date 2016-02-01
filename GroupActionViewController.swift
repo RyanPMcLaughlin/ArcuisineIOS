@@ -31,10 +31,13 @@ class GroupActionViewController: UIViewController {
                 if let dataFromString = response.data{
                     let json = JSON(data: dataFromString)
                     // If response is positive
-
+                    print(json)
+                    print(json["gid"])
                     if (json["gid"] != nil){
-                        GID = json["success"].string ?? ""
+                        GID = String((json["gid"]))
                         // Store the other fields in a list accessible by other scenes
+                        MASTER=true
+                        users=["\(UID)"]
                         self.performSegueWithIdentifier("makeGroupSegue", sender:nil)
                     }else{
                         self.displayLabel.hidden=false

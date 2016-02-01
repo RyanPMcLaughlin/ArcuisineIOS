@@ -12,6 +12,7 @@ import SwiftyJSON
 
 var GID:String = ""
 var users:[String]?
+var MASTER=false
 
 class GroupIdentificationViewController: UIViewController {
 
@@ -49,6 +50,7 @@ class GroupIdentificationViewController: UIViewController {
                         GID = groupID
                         let usersTemp:[JSON] = json["users"].arrayValue
                         users = usersTemp.map{$0.string!}
+                        MASTER=false
                         // Store the other fields in a list accessible by other scenes
                         self.performSegueWithIdentifier("IDToUsersSegue", sender:nil)
                     }else{

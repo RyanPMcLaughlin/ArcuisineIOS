@@ -152,7 +152,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiR-Z1-4f2">
-                                    <rect key="frame" x="95" y="25" width="42" height="21"/>
+                                    <rect key="frame" x="27" y="25" width="321" height="36"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
@@ -195,6 +195,10 @@
                             <outlet property="delegate" destination="gJG-4g-wWB" id="RRg-dO-i6z"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="displayLabel" destination="XiR-Z1-4f2" id="N3P-3T-g5e"/>
+                        <outlet property="masterButton" destination="r8c-rv-tjX" id="wsa-2N-SqD"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qY-QJ-l2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
